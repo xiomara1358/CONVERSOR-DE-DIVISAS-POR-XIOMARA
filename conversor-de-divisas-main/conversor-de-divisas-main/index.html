@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+    <!-- Title -->
+    <h1>CONVERSOR DE DIVISAS</h1>
+     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+
+
+
+    <!-- ====== Form Container ====== -->
+    <div id="data">
+      <form action="#">
+        
+        <!-- Labels Section -->
+        <div id="texto">
+          <label for="importe">   Importe  </label>
+          <label for="from"> De:</label>
+          <label for="to">A:</label>
+        </div>
+
+        <!-- Inputs & Selectors Section -->
+        <div id="valores">
+          <!-- Input: Amount -->
+          <input
+            type="number"
+            name="importe"
+            id="importe"
+            min="0"
+            max="1000000"
+            placeholder="10.0"
+            required
+          />
+
+          <!-- Select: From currency -->
+          <select name="from" id="from"></select>
+
+          <!-- Exchange Icon -->
+          <i class="fa-solid fa-right-left"></i>
+
+          <!-- Select: To currency -->
+          <select name="to" id="to"></select>
+        </div>
+
+        <!-- Error Message -->
+        <p id="errorMsg"></p>
+
+        <!-- Submit Button -->
+        <input type="submit" id="submit" value="Convertir" />
+
+        <!-- Output Messages -->
+        <p id="resultado"></p>
+        <p id="info"></p>
+      </form>
+    </div>
+    <!-- ====== End Form Container ====== -->
+  </main>
+  <!-- =============== END MAIN CONTENT ================= -->
+
+  <!-- Footer -->
+  <footer class="attribution">
+    <!-- Aquí puedes agregar créditos o enlaces -->
+  </footer>
+</body>
+</html>
